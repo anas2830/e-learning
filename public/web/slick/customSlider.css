@@ -1,0 +1,365 @@
+.slider-container{
+    position: relative;
+}
+.lfwf-slider{
+    margin-bottom: 60px !important;
+}
+.lfwf-slider img {
+    max-width: 100%;
+}
+.text-center.content-group.student-success-story{
+    margin-bottom: -8px !important;
+}
+.slick-prev.slick-arrow {
+    left: 15px;
+    z-index: 999;
+    opacity: 0;
+    transition: .5s;
+}
+.slick-next.slick-arrow {
+    right: 24px;
+    opacity: 0;
+    transition: .5s;
+}
+.lfwf-slider:hover .slick-prev.slick-arrow,
+.lfwf-slider:hover .slick-next.slick-arrow{
+    opacity: .5;
+}
+.slick-prev::before, 
+.slick-next::before {
+    color: #20ad96;
+    font-size: 30px;
+}
+.slick-prev.slick-arrow:hover,
+.slick-next.slick-arrow:hover{
+    opacity: 1 !important;
+}
+.slick-dots {
+    text-align: left;
+    margin-left: 15px;
+}
+.slider-item {
+    padding: 10px !important;
+}
+.slider-content {
+    background: #fff;
+    border-radius: 15px;
+    padding: 20px;
+    box-sizing: border-box;
+    cursor: pointer;
+    /* border: 1px solid #ddd; */
+}
+.slider-top img {
+    border-radius: 10px 10px 0 0;
+    box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px;
+}
+.slider-mid::after,
+.slider-left::after{
+    content: "";
+    display: block;
+    clear: both;
+}
+
+.slider-left {
+    display: flex;
+}
+.slider-right {
+    margin-top: -20px;
+    text-align: right;
+    flex-grow: 1;
+}
+.left-student-info {
+    float: right;
+    margin-top: -20px;
+}
+.left-thumb {
+    float: left;
+    width: 80px;
+    height: 75px;
+    margin-right: 10px;
+}
+.left-thumb img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    /* border: ; */
+}
+
+.slider-mid {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 15px;
+    background: #fff;
+    border-radius: 10px;
+}
+.slider-student-name {
+    color: #545454;
+    font-size: 20px;
+    line-height: 1em;
+    margin-bottom: 0;
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.slider-course-name {
+    color: #444;
+    font-weight: normal;
+    font-size: 12px;
+    margin-top: 2px;
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.slider-batch-name {
+    margin-top: 10px;
+    color: #545454;
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 0;
+    max-width: 140px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+@media all and (max-width:400px) {
+    .slider-student-name {
+        max-width: 120px;
+    }
+    .slider-course-name {
+        max-width: 120px;
+    }
+    .slider-batch-name {
+        max-width: 120px;
+    }
+}
+
+.marketplace-name {
+    color: #545454;
+    font-size: 20px;
+}
+.job-ammount {
+    font-size: 20px;
+    color: #545454;
+    font-style: italic;
+    /* margin-top: 10px; */
+}
+.slider-bottom p {
+    font-style: italic;
+    font-size: 12px;
+    line-height: 1.5em;
+}
+/* Read More Position */
+
+.slider-read-more ul {
+    list-style: none;
+    text-align: right;
+}
+.slider-read-more ul li {
+    display: inline-block;
+    margin-left: -10px;
+}
+@media all and (max-width: 600px) {
+    .slider-read-more ul li:nth-child(9),
+    .slider-read-more ul li:nth-child(10){
+        display: none;
+    }
+}
+.slider-read-more {
+    position: absolute;
+    right: 12px;
+    bottom: -43px;
+}
+.slider-read-more ul li img {
+    width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 2px solid #fff;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+.slider-read-more ul span {
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 15px;
+}
+.slider-read-more:hover ul span {
+    text-decoration: underline;
+}
+/* Bottom Style */
+.slider-bottom {
+    border-top: 1px solid #ddd;
+    margin-top: 12px;
+    padding-top: 10px;
+    text-align: center;
+    position: relative;
+}
+
+/* All New Style For Love Counter */
+    .slider-top {
+        position: relative;
+        overflow: hidden;
+    }
+    .slider-top img{
+        transition: .5s;
+        transition-timing-function: ease-in-out;
+        border-radius: 10px 10px 0 0;
+    }
+    .slider-top:hover img{
+        transform: scale(1.05);
+    }
+    .slider-hover-react {
+        position: absolute;
+        left: 0;
+        top: 0;
+        margin: 0;
+        height: 100%;
+        width: 100%;
+        z-index: 999;
+        transition: .3s;
+    }
+    .slider-icon-inner {
+        text-align: center;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100%;
+    }
+    .love-icon i{
+        font-size: 65px;
+        transition: .6s;
+    }
+    .slider-icon-container{
+        position: relative;
+        top: 20px;
+    }
+    .like-counter{
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 50%;
+        margin: 0;
+        transform: translateY(-50%);
+        z-index: 99999;
+        color: #fff;
+        font-size: 24px;
+    }
+    .slider-top:hover .slider-hover-react {
+        background: rgba(0, 0, 0, 0.05);
+        border-radius: 10px;
+    }
+    .slider-top:hover .slider-hover-react .love-icon i{
+        opacity: 1;
+        visibility: visible;
+    }
+    .love-icon .love-outline{
+        display: block;
+        color: rgba(237, 74, 88,.5);
+    }
+    .love-icon .love-fill{
+        display: none;
+    }
+    .love-icon.love-checked .love-outline{
+        display: none;
+    }
+    .love-icon.love-checked .love-fill{
+        display: block;
+        color: #ed4956;
+    }
+    .love-icon .like-counter {
+        color: rgba(0,0,0,.5);
+    }
+    .love-icon.love-checked .like-counter {
+        color: #fff;
+    }
+    .love-icon i{
+        animation: icon 200ms forwards alternate;
+    }
+    .love-icon i{
+        visibility: visible;
+        animation: anim 300ms forwards;
+        opacity: 1;
+    }
+
+    @keyframes icon{
+        from{
+            transform: scale(2);
+        }
+        to{
+            transform: scale(1);
+        }
+    }
+
+    @keyframes anim{
+        0%{
+            opacity: 0;
+        }
+        75%{
+            transform: scale(1.5);
+        }
+        100%{
+            transform: scale(1);
+        }
+    }
+
+
+/* Grid CSS Start form there */ 
+
+        /* All New CSS For Success Story Grid Page */
+        .slider-content img{
+            max-width: 100%;
+        }
+        .slider-grid-section .slider-grid-container {
+            padding-top: 0;
+            max-width: 1600px;
+            margin: auto;
+        }
+        .slider-grid-container{
+            width: 100%;
+            display: -webkit-box;  /* OLD - iOS 6-, Safari 3.1-6, BB7 */
+            display: -ms-flexbox;  /* TWEENER - IE 10 */
+            display: -webkit-flex; /* NEW - Safari 6.1+. iOS 7.1+, BB10 */
+            display: flex;         /* NEW, Spec - Firefox, Chrome, Opera */
+            -webkit-box-pack: justify;
+            -webkit-justify-content: space-between;
+            -ms-flex-pack: justify;
+            justify-content: space-between;
+            flex-wrap: wrap;
+            align-items: flex-start;
+        }
+        .slider-custom-col{
+            width: 25%;
+            flex-grow: 1;
+            display: block;
+        }
+        @media all and (max-width: 1400px) {
+            .slider-grid-section .slider-grid-container {
+                padding: 0 40px;
+            }
+            .slider-custom-col{
+                width: 31.3%;
+            }
+        }
+        @media all and (max-width: 1200px) {
+            .slider-custom-col{
+                width: 30.5%;
+            }
+        }
+        @media all and (max-width: 1024px) {
+            .slider-custom-col{
+                width: 46%;
+            }
+        }
+        @media all and (max-width: 992px) {
+            .slider-custom-col{
+                width: 44%;
+            }
+        }
+        @media all and (max-width: 768px) {
+            .slider-grid-section .slider-grid-container {
+                padding: 5px;
+            }
+            .slider-custom-col{
+                width: 100%;
+            }
+        }
